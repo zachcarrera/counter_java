@@ -19,6 +19,12 @@
 		<p>
 			<a href="/">Test another visit?</a>
 		</p>
+		<p>
+			<a href="/clear">Reset the counter</a>
+		</p>
+		<p>
+			<a href="/plus2">Increment by 2</a>
+		</p>
 	</div>
 </body>
 </html>
