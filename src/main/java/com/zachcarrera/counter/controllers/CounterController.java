@@ -24,4 +24,21 @@ public class CounterController {
 	public String counter() {
 		return "counter.jsp";
 	}
+	
+	@GetMapping("/clear")
+	public String clear(HttpSession session) {
+		session.setAttribute("count", 0);
+		return "redirect:/counter";
+	}
+	@GetMapping("/plus2")
+	public String plus2(HttpSession session) {
+
+		if (session.getAttribute("count") == null) {
+			session.setAttribute("count", 0);
+		} else {
+			Integer count = (Integer) session.getAttribute("count");
+			session.setAttribute("count", count + 2);
+		}
+		return "upBy2.jsp";
+	}
 }
