@@ -11,7 +11,12 @@
 
 </head>
 <body>
-<div class="d-flex justify-content-center mt-3"><p>Welcome User!</p></div>
+	<div class="d-flex justify-content-center mt-3 gap-3">
+		<p>Welcome User!</p>
+		<p>
+			<a href="/counter">View counter</a>
+		</p>
+	</div>
 
 </body>
 </html>
